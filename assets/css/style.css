@@ -597,6 +597,61 @@ section {
   text-decoration: none;
 }
 
+
+/*--------------------------------------------------------------
+# Cource Details Tabs
+--------------------------------------------------------------*/
+.cource-details-tabs {
+  overflow: hidden;
+  padding-top: 0;
+}
+
+.cource-details-tabs .nav-tabs {
+  border: 0;
+}
+
+.cource-details-tabs .nav-link {
+  border: 0;
+  padding: 12px 15px 12px 0;
+  transition: 0.3s;
+  color: #444444;
+  border-radius: 0;
+  border-right: 2px solid #e2e7e4;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.cource-details-tabs .nav-link:hover {
+  color: #da3352;
+}
+
+.cource-details-tabs .nav-link.active {
+  color: #da3352;
+  border-color: #da3352;
+}
+
+.cource-details-tabs .tab-pane.active {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.tab-pane h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #e43c5c;
+}
+
+.tab-pane i{
+  color: #e43c5c;
+}
+.cource-details-tabs .details p {
+  color: #da3352;
+}
+
+.cource-details-tabs .details p:last-child {
+  margin-bottom: 0;
+}
+
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
