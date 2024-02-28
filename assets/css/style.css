@@ -856,6 +856,8 @@ section {
 .portfolio .portfolio-item img {
   position: relative;
   top: 0;
+  border: 2px solid #e43c5c;
+  border-radius: 5px;
   transition: all 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
@@ -903,7 +905,7 @@ section {
 }
 
 .portfolio .portfolio-item:hover img {
-  top: -30px;
+  transform: scale(1.2);
 }
 
 .portfolio .portfolio-item:hover .portfolio-info {
@@ -2105,13 +2107,11 @@ section {
 
 .backgroundStyle {
   border-radius: 45px;
-  /* background: #f8f8f8; */
-  /* background: url("../img/bgImage.png") top center; */
   background: url('../img/bgImg.png') top center;
-  /* background-color: rgba(247, 245, 245, 0.896); */
   background-size: cover;
   position: relative;
   padding: 20px;
+  margin: 0 25px;
 }
 
 .backgroundStyle:before {
@@ -2127,7 +2127,72 @@ section {
 
 .backgroundStyleColoured {
   border-radius: 45px;
-  background-color: #ff6b6b;
-  background-image: linear-gradient(315deg, #ff6b6b 0%, #d3d3d3 74%);
+  background: rgb(190, 190, 190);
+  background: linear-gradient(172deg, rgb(238, 238, 238) 15%, rgb(202, 38, 68) 50%, rgba(230, 230, 230, 1) 85%);
   padding: 20px;
+}
+
+.backgroundStyleColouredSecond {
+  border-radius: 45px;
+  background: url('../img/bgImg1.png') top center;
+  /* background-color: rgba(247, 245, 245, 0.896); */
+  background-size: cover;
+  position: relative;
+
+  padding: 20px;
+}
+
+.backgroundStyleColouredSecond:before {
+  content: "";
+  /* background: rgba(83, 81, 81, 0.85); */
+  border-radius: 45px;
+  background-color: #ff6b6b;
+  background-image: linear-gradient(55deg, #ff6b6b 0%, #d3d3d3 54%);
+
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.backgroundStyleDiscount {
+    border-radius: 45px;
+    /* background: #f8f8f8; */
+    /* background: url("../img/bgImage.png") top center; */
+    background: url('../img/bgImg2.png') top center;
+    /* background-color: rgba(247, 245, 245, 0.896); */
+    background-size: cover;
+    position: relative;
+    padding: 20px;
+    margin: 0 25px;
+}
+
+.backgroundStyleDiscount:before {
+  content: "";
+  background: rgb(57, 0, 0);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.bgPriceBox{
+  background: url('../img/bgImgPrice.png') top center !important;
+  background-size: cover !important;
+  position: relative;
+}
+
+.bgPriceBox:before {
+  content: "";
+  background: rgba(255, 255, 255, 1);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
 }
