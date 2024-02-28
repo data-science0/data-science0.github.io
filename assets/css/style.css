@@ -641,9 +641,10 @@ section {
   color: #e43c5c;
 }
 
-.tab-pane i{
+.tab-pane i {
   color: #e43c5c;
 }
+
 .cource-details-tabs .details p {
   color: #da3352;
 }
@@ -762,6 +763,10 @@ section {
 .features .icon-box:hover a {
   color: #e43c5c;
 }
+
+
+
+
 
 /*--------------------------------------------------------------
 # Cta
@@ -2090,4 +2095,39 @@ section {
   background: #d01d3f;
   color: #fff;
   text-decoration: none;
+}
+
+
+
+/*--------------------------------------------------------------
+# background styles
+--------------------------------------------------------------*/
+
+.backgroundStyle {
+  border-radius: 45px;
+  /* background: #f8f8f8; */
+  /* background: url("../img/bgImage.png") top center; */
+  background: url('../img/bgImg.png') top center;
+  /* background-color: rgba(247, 245, 245, 0.896); */
+  background-size: cover;
+  position: relative;
+  padding: 20px;
+}
+
+.backgroundStyle:before {
+  content: "";
+  background: rgba(255, 255, 255, 0.85);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.backgroundStyleColoured {
+  border-radius: 45px;
+  background-color: #ff6b6b;
+  background-image: linear-gradient(315deg, #ff6b6b 0%, #d3d3d3 74%);
+  padding: 20px;
 }
