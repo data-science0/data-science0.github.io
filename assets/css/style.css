@@ -2196,3 +2196,24 @@ section {
   right: 0;
   z-index: -1;
 }
+
+.backWall{
+  border-radius: 45px;
+  border: 3px solid #e43c5c;
+  background: url('../img/bgImgPrice.png') top center;
+  background-size: cover;
+  position: relative;
+  padding: 20px 0;
+  margin: 5px 25px;
+}
+
+.backWall:before {
+  content: "";
+  background: linear-gradient(72deg, rgb(238, 238, 238) 15%, rgb(202, 38, 68) 50%, rgba(230, 230, 230, 1) 85%);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
