@@ -15,7 +15,7 @@ function sendMail() {
     console.log(params);
 
     grecaptcha.ready(function() {
-        grecaptcha.execute('reCAPTCHA_site_key', {action: 'submit'}).then(function(token) {
+        grecaptcha.execute('6LdRv6MpAAAAAOaNpmlgZJd-V2zBIyfsBdIrgdkB', {action: 'submit'}).then(function(token) {
             // Add your logic to submit to your backend server here.
             console.log(token +  ' .... ');
         });
