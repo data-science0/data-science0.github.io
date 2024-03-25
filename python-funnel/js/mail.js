@@ -18,6 +18,24 @@ function sendMail() {
         grecaptcha.execute('6LdRv6MpAAAAAOaNpmlgZJd-V2zBIyfsBdIrgdkB', {action: 'submit'}).then(function(token) {
             // Add your logic to submit to your backend server here.
             console.log(token +  ' .... ');
+            $.ajax({
+                type: "POST",
+                url: 'https://www.google.com/recaptcha/api/siteverify',
+                data: {
+                    "secret": "6LdRv6MpAAAAAHknp3Ni6dnsn4HFAU9eAWH8GbJ2",
+                    "token" : token,
+                },
+                success: function(data) {
+                    if(data.response.success) {
+                        window.recaptchaScore = data.response.score;
+                        console.log('user score ' + data.response.score)
+                    }
+                },
+                error: function() {
+                    console.log('error while getting google recaptcha score!')
+                }
+            });
+
         });
       });
 
