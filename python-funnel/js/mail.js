@@ -59,7 +59,7 @@ function sendMail() {
 }
 
 async function verifyRecaptcha(token) {
-    const response = await fetch("/.netlify/functions/recaptcha?response=" + token);
+    const response = await fetch("https://serverless-for-captcha.netlify.app/.netlify/functions/recaptcha?response=" + token);
     const data = await response.json();
     return data;
 }
