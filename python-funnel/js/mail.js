@@ -1,8 +1,8 @@
 function sendMail(){
     var params = {
-        name: document.getElementById('NameUser'),
-        email: document.getElementById('EmailUser'),
-        contact: document.getElementById('ContactUser')
+        name: document.getElementById('NameUser').value,
+        email: document.getElementById('EmailUser').value,
+        contact: document.getElementById('ContactUser').value
     };
     var serviceId = 'service_uxdslki';
     var templateId = 'template_qots349';
